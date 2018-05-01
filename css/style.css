@@ -1,0 +1,476 @@
+/*light blue = #66a0af;*/
+
+
+
+*{ box-sizing: border-box;font-weight: 100; }
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+ 
+}
+
+strong{font-weight: 500; color:#66a0af; padding-left: 2px; padding-right: 2px;}
+
+h1{font-size: 2.5em; color: black;}
+
+h2{font-size: 1.5em;color: white;}
+
+h3 {font-size: 1.1em;color: black;}
+h4 {font-size: 0.8em;color: black; padding: none; margin: 2px;}
+
+p { font-size: 1.1em;color: white;}
+
+a {text-decoration: none !important;}
+
+.button {
+  width: 80%;
+  border: none;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  margin: 2%;
+  font-weight: 100;
+}
+
+.button1 {
+  
+  border: none;
+  font-size: 16px;
+  background-color: #66a0af;
+  color: white;
+  padding: 2%;
+  margin: auto;
+  font-weight: 100;
+  position: relative;
+  bottom: 5%;
+}
+
+.desktop{padding: 10%; background-color: black;}
+.desktop img {width: 40%;}
+
+.mobile{padding-top: 18%; position: relative; }
+
+
+
+.responsive { 
+  padding-top: 2%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  
+ margin: auto;
+  position: relative;
+}
+
+#desc {
+  
+  position: relative;
+
+  margin: 5px;
+}
+
+#desc img {
+margin: auto;
+}
+
+
+
+.nav {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  height: 10%;
+  z-index: 3;
+
+
+}
+
+.nav h3{
+  position: fixed;
+top: 10px;
+text-align: center;
+left: 50px;
+}
+
+
+
+footer {
+ 
+    position: fixed;
+   bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    color: white;
+    background-color: black;
+}
+
+
+footer p{
+  display: inline-block;
+  padding: 2% 5%;
+}
+
+
+
+/*Button Slider*/
+.switch {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 60px;
+  height: 34px;
+  margin: 3%;
+
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #66a0af;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+h3{
+display: flex;
+ float: left;
+ margin: 3%;
+
+}
+
+#map {
+
+   width: 90%;
+  height: 80%;
+  padding-top: 100%;
+  margin: auto;
+  padding-bottom: 90px;
+}
+
+#map1 {
+
+  width: 100%;
+  height: 100%;
+  padding-top: 800px;
+  margin: auto;
+}
+
+#map2 {
+
+  width: 90%;
+  height: 100%;
+  padding-top: 100%;
+  margin: auto;
+}
+
+/* The container */
+.container {
+    display: inline-flex;
+    position: relative;
+    padding-left: 30px;
+  
+    cursor: pointer;
+  
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #66a0af;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #66a0af;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.button {
+  width: 70%;
+    border: none;
+    /*border-radius: 4px;*/
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    margin: 2%;
+    font-weight: 100;
+
+}
+
+input[type=text], input[type=password] {
+  font-family: 'Roboto'
+  font-weight: 100;
+    width: 70%;
+    border: 1px solid #66a0af;
+    /*border-radius: 4px;*/
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px;
+
+}
+
+
+input[name=search] {
+  font-family: 'Roboto'
+  font-weight: 100;
+    width: 92%;
+    border: 1px solid #66a0af;
+    /*border-radius: 4px;*/
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px;
+
+}
+
+input[name=car] {
+  font-family: 'Roboto';
+  font-weight: 100;
+    width: 20%;
+    border: 1px solid #66a0af;
+    /*border-radius: 4px;*/
+    font-size: 16px;
+    background-color: white;
+ padding: 3px 7px;
+
+}
+
+form {padding-top: 5%;}
+
+
+input[type=time]{
+ 
+  background-color: white; 
+  font-family: 'Roboto', sans-serif; 
+  float: right;
+  margin: 3%;
+  padding: 2%;
+  border: 1px solid #66a0af;
+}
+
+#pic img{
+  width: 100%;
+  margin-top: -10px;
+  z-index: -3;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+ 
+  .desktop{display: none;}
+  .mobile{display: show;}
+  .login{ width: 100%;
+    height: 100%;
+    background-image: url("https://image.ibb.co/eiYD27/front.jpg");
+    background-position: center;
+    background-size: cover;}
+    .login img{padding-top: 10%;}
+
+}
+
+@media (min-width: 500px) {
+  
+  body{background-color: black;}
+  .desktop{display: show;}
+  .mobile {display: none;}
+  .nav{display: none;}
+  footer{display: none;}
+  .login {display: none;}
+
+}
+
+
+
+
+@media (min-width: 1000px) {
+  
+  body{background-color: black;}
+  .desktop{display: show;}
+  .mobile {display: none;}
+  .nav{display: none;}
+  footer{display: none;}
+  .login {display: none;}
+  .desktop{padding: 5%;}
+.desktop img {width: 20%;}
+
+}
+
+/* The container */
+.cal{
+ background: white;
+
+}
+
+.monthyear {
+  background: #fff;
+  font-size: 0.5em;
+}
+
+table {
+  width: 100%;
+}
+th {
+  text-align: center;
+}
+td {
+  width: 20px;
+  height: 10px;
+  text-align: center;
+  line-height: 30px !important;
+  font-size: 1em;
+}
+
+.hover {
+  background: #66a0af;
+}
+
+
+
+
+
+
+
+.responsive { 
+  padding-top: 2%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  
+  margin: auto;
+  position: relative;
+}
+
+.responsive img{
+  padding: 2%;
+  position: relative;
+  width: 45%;
+  height: 45%;
+}
+
+
+
+.sidenav {
+    display: none;
+    height: 100%;
+    text-align: left;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    float: left;
+}
+
+.sidenav a {
+    padding: 18px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    font-size: 36px;
+    
+}
+
+#menu{float: left; position: fixed; top: 10px;
+text-align: center;
+left: 15px;}
+
